@@ -1,0 +1,194 @@
+/* ✅ General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ✅ Navbar Fixed at the Top */
+  .navbar {
+    background: linear-gradient(to right, #ff0000, #ff4d4d); /* Your original color */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns brand left, links right */
+    align-items: center;
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar is above everything */
+    height: 90px;
+  }
+  
+  /* ✅ "Home to Introverts" (White, Bold & Clickable) */
+  .navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: white !important;
+    text-decoration: none;
+    margin-left: 20px;
+    flex: 1; /* Takes up available space */
+  }
+  
+  /* ✅ Search Container */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Takes up available space */
+  }
+  
+  /* ✅ Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 80%;
+    max-width: 400px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar:focus-within {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* ✅ Search Input */
+  .search-input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+  }
+  
+  /* ✅ Search Button */
+  .search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .search-button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ✅ Navbar Links */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    flex: 1; /* Takes up available space */
+    justify-content: flex-end; /* Aligns links to the right */
+  }
+  
+  /* ✅ Navbar Links Styling */
+  .navbar-links a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* ✅ Login/Signup Button (Always Visible) */
+  .login-btn {
+    padding: 8px 12px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; /* Ensures it stays visible */
+  }
+  .stories-btn{
+    padding: 8px 12px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; /* Ensures it stays visible */
+  }
+  
+  
+  
+  /* ✅ Hover Effect */
+  .login-btn:hover {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  /* ✅ Ensure Navbar Does Not Overlap Page Content */
+  body {
+    padding-top: 70px; /* Prevents content from hiding behind navbar */
+    background-color: #ffe6e6; /* Light background for better readability */
+  }
+  
+  .hero {
+    margin-top: 100px;  /* Reduced from 120px */
+    background: linear-gradient(to right, #ff0000, #ff4d4d);
+    color: white;
+    padding: 50px 30px;  /* Reduced from 80px 40px */
+    text-align: center;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;  /* Reduced from 1200px */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;  /* Reduced from 500px */
+  }
+  
+  .hero h1 {
+    font-size: 40px;  /* Reduced from 48px */
+    font-weight: bold;
+    margin-bottom: 15px;  /* Reduced from 20px */
+    max-width: 800px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 20px;  /* Reduced from 22px */
+    margin-bottom: 30px;  /* Reduced from 40px */
+    max-width: 700px;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  /* ✅ Submit Your Story Button */
+  .submit-story {
+    display: inline-block;
+    background: white;
+    color: #ff0000;
+    padding: 12px 25px;  /* Reduced from 15px 30px */
+    font-size: 17px;  /* Reduced from 18px */
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #ff0000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-story:hover {
+    background: #ff4d4d;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
